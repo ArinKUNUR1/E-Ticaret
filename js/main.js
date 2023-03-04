@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",function() {
       const productBox = document.createElement('div');
       productBox.classList.add('product')
       productBox.innerHTML = `
-      <img src=${product.images} alt="">
+      <img src=${product.images[0]} alt="">
       <div class="explanation">
           <p>${product.title}</p>
           <h1>${product.category.name}</h1>
