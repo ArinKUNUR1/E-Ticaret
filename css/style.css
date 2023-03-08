@@ -101,7 +101,7 @@ header input {
 /* ÜRÜNLER */
 
 .products-box {
-    padding: 50px;
+    padding: 20px;
 }
 
 .products-box h1 {
@@ -124,6 +124,7 @@ header input {
     padding: 7px 7px;
     border-radius: 5px;
     font-family: sans-serif;
+    align-items: center;
 }
 
 .product img {
@@ -164,3 +165,63 @@ header input {
     cursor: pointer;
 }
 
+/* SEPET */
+
+.modal-box {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: #393e4689;
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.modal span {
+
+}
+
+.active {
+    display: flex;
+}
+
+#close {
+    position: absolute;
+    right: 30px;
+    font-family: sans-serif;
+    color: darkblue;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: red;
+    transition: all 0.4s;
+}
+
+.urunBox {
+    background-color: rgb(223, 211, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.urunBox h1 {
+    font-size: 20px;
+}
+
+.urunBox h2 {
+    font-size: 15px;
+}
