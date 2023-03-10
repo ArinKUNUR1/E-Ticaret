@@ -185,10 +185,8 @@ header input {
   border-radius: 30px;
   padding: 20px;
   position: relative;
-}
-
-.modal span {
-
+  overflow: auto;
+  flex-direction: column;
 }
 
 .active {
@@ -216,6 +214,8 @@ header input {
     font-family: sans-serif;
     border-radius: 15px;
     padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .urunBox h1 {
@@ -224,4 +224,32 @@ header input {
 
 .urunBox h2 {
     font-size: 15px;
+}
+
+.urunBox h3 {
+    color: white;
+    right: 220px;
+    position: absolute;
+}
+
+.alt {
+    position: absolute;
+    bottom: 0;
+    font-family: sans-serif;
+    background-color: #393e4689;
+    color: white;
+    width: 500px;
+    left: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.alt span-2 {
+    color: red;
+    font-family: sans-serif;
+}
+
+#toplamBilgi {
+    color: red;
+    font-family: sans-serif;
 }

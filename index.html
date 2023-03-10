@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>E-Ticaret</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- BAŞLIK -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- HEADER -->
     <header>
       <h1>E-Ticaret</h1>
       <input type="text" placeholder="aramak istediğin ürünü yazın" />
@@ -23,27 +24,27 @@
       <h1>Kategoriler</h1>
       <div id="categories"></div>
     </div>
-
     <!-- ÜRÜNLER -->
     <div class="products-box">
       <h1>Ürünler</h1>
       <div id="products">
       </div>
     </div>
-
     <!-- SEPET -->
     <div class="modal-box">
       <div class="modal">
-        <a id="close"> X </a>
+        <a id="close">X</a>
         <div class="urunBox">
-          <h1> Concrete Tuna</h1>
-          <h2>1000</h2>
+          <h3>SEPET</h3>
         </div>
-        <span>TOPLAM FİYAT: </span>
-        <span id="toplamBilgi"></span>
-     </div>
+        <div class="alt">
+          <span>Toplam Fiyat: </span>
+          <span id="toplamBilgi"></span>
+          <span-2>$</span-2>
+        </div>
+      </div>
     </div>
     <!-- SCRİPTS -->
-    <script src="main.js"></script>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>

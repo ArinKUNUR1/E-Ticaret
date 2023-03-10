@@ -31,8 +31,8 @@ function sepeteEkle(parametre) {
   urunBox.innerHTML = `
           <h1>${parametre.name}</h1>
           <h2>${parametre.price}$</h2>
-
   `;
+  
   modal.appendChild(urunBox)
 
   fiyatlar.push(Number(parametre.price))
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded",function() {
   })
   // VERİLERİN EKRANA BASILMASI
   .then(function(data) {
-    data.slice(0, 30).forEach(function(product) {
+    data.slice(0, 100).forEach(function(product) {
       const productBox = document.createElement('div');
       productBox.classList.add('product')
       productBox.innerHTML = `
