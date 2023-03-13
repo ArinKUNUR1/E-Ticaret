@@ -185,8 +185,6 @@ header input {
   border-radius: 30px;
   padding: 20px;
   position: relative;
-  overflow: auto;
-  flex-direction: column;
 }
 
 .active {
@@ -206,7 +204,15 @@ header input {
     transition: all 0.4s;
 }
 
-.urunBox {
+.urunDiv {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.urun-box {
     background-color: rgb(223, 211, 211);
     display: flex;
     justify-content: space-between;
@@ -218,18 +224,16 @@ header input {
     margin-top: 30px;
 }
 
-.urunBox h1 {
+.urun-active {
+    display: none;
+}
+
+.urun-box h1 {
     font-size: 20px;
 }
 
-.urunBox h2 {
+.urun-box h2 {
     font-size: 15px;
-}
-
-.urunBox h3 {
-    color: white;
-    right: 220px;
-    position: absolute;
 }
 
 .alt {
