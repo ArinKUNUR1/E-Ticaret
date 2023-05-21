@@ -81,3 +81,15 @@ sepetBtn.addEventListener("click",function() {
 closeBtn.addEventListener("click",function() {
   modalBox.classList.remove('active');
 })
+// KAYIT OL
+var Box = document.querySelector(".Box");
+var kayıtBtn = document.getElementById("kayıt ol");
+var closeBtn = document.getElementById("close-btn");
+
+kayıtBtn.addEventListener("click",function() {
+  Box.classList.add('active');
+})
+
+closeBtn.addEventListener("click",function() {
+  Box.classList.remove('active');
+})

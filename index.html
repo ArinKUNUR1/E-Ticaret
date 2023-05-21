@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>E-Ticaret</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>E-Ticaret</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-      <h1>E-Ticaret</h1>
-      <input type="text" placeholder="aramak istediğin ürünü yazın" />
-      <div class="buttons">
-        <button id="sepet">Sepet</button>
-        <button>Kayıt Ol</button>
-        <button>Giriş Yap</button>
+  <!-- HEADER -->
+  <header>
+    <h1>E-Ticaret</h1>
+    <input type="text" placeholder="aramak istediğin ürünü yazın" />
+    <div class="buttons">
+      <button id="sepet">Sepet</button>
+      <button id="kayıt ol">Kayıt Ol</button>
+      <button>Giriş Yap</button>
+    </div>
+  </header>
+  <!-- KATEGORİLER -->
+  <div class="categories-box">
+    <h1>Kategoriler</h1>
+    <div id="categories"></div>
+  </div>
+  <!-- ÜRÜNLER -->
+  <div class="products-box">
+    <h1>Ürünler</h1>
+    <div id="products"></div>
+  </div>
+  <!-- SEPET -->
+  <div class="modal-box">
+    <div class="modal">
+      <a id="close">X</a>
+      <div class="alt">
+        <span>Toplam Fiyat: </span>
+        <span id="toplamBilgi"></span>
+        <span-2>$</span-2>
       </div>
-    </header>
-    <!-- KATEGORİLER -->
-    <div class="categories-box">
-      <h1>Kategoriler</h1>
-      <div id="categories"></div>
     </div>
-    <!-- ÜRÜNLER -->
-    <div class="products-box">
-      <h1>Ürünler</h1>
-      <div id="products"></div>
-    </div>
-    <!-- SEPET -->
-    <div class="modal-box">
-      <div class="modal">
-        <a id="close">X</a>
-        <div class="alt">
-          <span>Toplam Fiyat: </span>
-          <span id="toplamBilgi"></span>
-          <span-2>$</span-2>
-        </div>
+  </div>
+  <!-- KAYIT OL -->
+  <div class="Box">
+    <div class="box">
+      <a id="close-btn">X</a>
+      <div class="form">
+        <input type="text" placeholder="E-mail veya Telefon numarası" />
+        <input type="number" placeholder="E-mail Şifresi" />
+        <button id="btn">Kayıt Ol</button>
       </div>
     </div>
-    <!-- SCRİPTS -->
-    <script src="js/main.js"></script>
+  </div>
+  <!-- SCRİPT -->
+  <script src="js/main.js"></script>
 </body>
 </html>
